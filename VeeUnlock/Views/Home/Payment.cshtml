@@ -1,0 +1,327 @@
+﻿
+@{
+    ViewBag.Title = "Payment";
+}
+<div class="breadcrumb d-flex bg-white mt-3 mb-3">
+    <div class="container-2">
+        <ul class="list-unstyled d-flex mb-0">
+            <li class="bread-item"><a href="/home">Home</a></li>
+            <li class="bread-item"><a href="#" class="active">@ViewBag.Title</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-title p-md-4 p-3">
+    <h1 class="Rockwell-45 text-black-title bold">Payment</h1>
+</div>
+<div class="container-2 mt-4">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="text-center p-md-3 p-2">
+                <img src="~/assets/images/mobile-company-icons/Group 337.png" class="img-fluid" alt="">
+                <div class="mt-3">
+                    <h4 class="Rockwell-20 bold text-black-title">Order - iPhone 12 Pro Max unlock via IMEI</h4>
+                    <p class="text-grey Segoe-16">Unlock your iPhone 12 Pro Max to use any network / carrier SIM card. Your phone is unlocked permanently and safely through our online service.</p>
+                </div>
+                <div class="mt-3">
+                    <div class="payment-border-box">
+                        <div class="padding-20">
+                            <h4 class="Segoe-20 semi-bold">Order Summary</h4>
+                            <p class="d-inline-block Segoe-18 semi-bold mb-0">Product</p>
+                            <p class="d-inline-block float-right Segoe-18 semi-bold mb-0">Subtotal</p>
+                            <hr>
+                            <p class="Segoe-16 semi-bold">Phone</p>
+                            <p class="Segoe-12 semi-bold">IMEI Number:</p>
+                            <p class="Segoe-12  ">867679045364105</p>
+                            <p class="Segoe-12 semi-bold">Service Type:</p>
+                            <p class="Segoe-12  ">Standard Service</p>
+                            <p class="Segoe-12 semi-bold">Average Delivery Time:</p>
+                            <p class="Segoe-12 ">1-24 Hours</p>
+                            <hr>
+                            <h4 class="Segoe-14 semi-bold">Do you have a discount code?</h4>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control Segoe-12" placeholder="Discount Code">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary btn-sm Segoe-14 font-normal">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lightgrey">
+                            <div class="padding-20">
+                                <p class="d-inline-block Segoe-12 mb-0">Average Delivery Time</p>
+                                <p class="d-inline-block Segoe-12 mb-0 float-right">1-24 hours</p>
+                                <hr>
+                                <h4 class="Segoe-16 semi-bold d-inline-block">Total</h4>
+                                <input type="number" class="float-right Totalinput">
+                                <hr>
+                                <p class="d-inline-block mb-0">
+                                    <img src="~/assets/images/contact-icon/Icon metro-visa.png" class="img-fluid" alt="">
+                                    <img src="~/assets/images/contact-icon/Icon payment-mastercard-alt.png" class="img-fluid" alt="">
+                                </p>
+                                <p class="d-inline-block float-right Segoe-14 color-blue mb-0">
+                                    <img src="~/assets/images/contact-icon/Icon open-lock-locked.png" class="img-fluid" alt="">
+                                    Secure Payment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="payment-border-box bg-light-blue border-0 p-4">
+                            <div class="text-center relative">
+                                <h4 class="Segoe-16 color-blue font-normal">
+                                    Guaranteed Delivery Time
+                                    <a class="popup-click" onclick="return Popup()"> <span class="fa fa-question-circle"></span></a>
+                                </h4>
+                                <p class="Segoe-16 text-grey font-normal">2 Business Days</p>
+                                <div class="popup d-none" id="popupinfo">
+                                    <div class="card popup-card">
+                                        <div class="card-header bg-white">
+                                            <h6 class="color-blue Segoe-16 text-left"> What do these times mean?</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-3 col-3 text-center align-self-top">
+                                                    <img src="~/assets/images/small-icons/Icon ionic-md-time.png" alt="">
+                                                </div>
+                                                <div class="col-md-9 col-9 text-left">
+                                                    <h4 class="text-grey bold Segoe-12">The average delivery time.</h4>
+                                                    <p class="text-grey Segoe-12">It is the average time to deliver unlocking service to you.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-3 text-center">
+                                                    <img src="~/assets/images/small-icons/Icon awesome-calendar-alt.png" alt="">
+                                                </div>
+                                                <div class="col-md-9 col-9 text-left">
+                                                    <h4 class="text-grey bold Segoe-12">The guaranteed delivery time.</h4>
+                                                    <p class="text-grey Segoe-12">It is the average time to deliver unlocking service to you.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-7">
+            <div class="bg-light-blue rounded">
+                <div class="padding-20">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="Segoe-20 semi-bold">Device:</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="Segoe-20">iPhone 12 Pro Max</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="Segoe-20 semi-bold">Carrier:</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="Segoe-20 mb-0">ATT USA</p>
+                            <p class="Segoe-14">Please ensure this is the carrier the device is locked to.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="Segoe-20 semi-bold">IMEI / Serial:</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="Segoe-20 mb-0">867679045364105</p>
+                            <p class="Segoe-14">
+                                Please ensure this is correct, no refunds if you submit the
+                                wrong handset.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="Segoe-20 semi-bold">Average Delivery Time:</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="Segoe-20">1-24 hours</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <p class="text-right text-grey Segoe-14">
+                    Depending on the model and network combination you select on the unlocking form you might be presented with the following service options: <span class="color-blue">Please select you suitable unlocking options</span>
+                </p>
+            </div>
+            <div class="mt-3">
+                <div class="row">
+                    <div class="col-md-4 d-grid">
+                        <div class="preorder-services">
+                            <div class="top-box">
+                                <div class="row">
+                                    <div class="col-md-10 col-10 align-self-center">
+                                        <p>
+                                            Pre-order Unlocking
+                                            Service
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2 col-2 pl-0 align-self-center">
+                                        <i class="fa fa-lock"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="Segoe-12 min-height mb-3">
+                                    This service scan is our low cost solution as long as the device meets the following requirements.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary bold Segoe-16 btn-block">Get Started</a>
+                                <p class="Segoe-9 mb-0 mt-2">
+                                    *There may be an additional unlocking fee to pay when using this services*
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-grid">
+                        <div class="standard-services">
+                            <div class="top-box">
+                                <div class="row">
+                                    <div class="col-md-10 col-10 align-self-center">
+                                        <p>
+                                            Standard Unlocking
+                                            Service
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2 col-2 pl-0 align-self-center">
+                                        <i class="fa fa-check-circle"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="Segoe-12 min-height mb-3">
+                                    If you are the original owner or are fully aware of the phones history / contract status, then please use this service.*
+                                </p>
+                                <a href="#" class="btn btn-outline-primary bold Segoe-16 btn-block">Get Started</a>
+                                <p class="Segoe-9 mb-0 mt-2">
+                                    *There may be an additional unlocking fee to pay when using this services*
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-grid">
+                        <div class="premium-services">
+                            <div class="top-box">
+                                <div class="row">
+                                    <div class="col-md-10 col-10 align-self-center">
+                                        <p>
+                                            Premium Unlocking
+                                            Service
+                                        </p>
+                                    </div>
+                                    <div class="col-md-2 col-2 pl-0 align-self-center">
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-3">
+                                <p class="Segoe-12 min-height mb-3">
+                                    If you don’t know the contract status / history or if the details of the phone are correct then this service is for you.
+                                </p>
+                                <a href="#" class="btn btn-outline-primary bold Segoe-16 btn-block">Get Started</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <p class="Segoe-18">
+                    This service scan is our low cost solution as long as the device meets the following requirements.
+                </p>
+                <ul>
+                    <li class="Segoe-18">Not blacklisted by original operator.</li>
+                    <li class="Segoe-18">Provided network is correct</li>
+                    <li class="Segoe-18">The device model selected is correct.</li>
+                </ul>
+                <p class="Segoe-18 color-blue">Neither this service nor any other unlocking service can disable or remove a phone from blacklist.</p>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <h4 class="Segoe-20 semi-bold  t-sm-center">Enter your details below</h4>
+    </div>
+    <div class="row ">
+
+        <div class="col-md-6">
+            <div class="input">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Email">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text bg-white rounded-0">
+                        <img src="~/assets/images/Flags/Flags/flag-Stars-and-Stripes-May-1-1795.png" width="30" alt="">
+                    </span>
+                </div>
+                <select name="" id="" class="form-control form-control-lg rounded-0">
+                    <option value="United Stated">United Stated</option>
+                </select>
+
+            </div>
+        </div>
+    </div>
+    <p class="Segoe-14 p-2 t-sm-center mb-0">Please do not use symbols or punctuation when entering your address details.</p>
+    <div class="row  ">
+        <div class="col-md-6">
+
+            <div class="input">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-map-marker"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Address">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <select name="" id="" class="form-control form-control-lg rounded-0">
+                <option value="City">City</option>
+            </select>
+        </div>
+    </div>
+    <div class="row  ">
+        <div class="col-md-6">
+
+            <div class="input">
+                <div class="input-group input-group-lg">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text"><i class="fa fa-fax"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Postal Code">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="" class="Segoe-18">
+                <input type="checkbox" class=""> By ticking this box you confirm you have read and understood our <a href="#" class="color-blue">Terms and Conditions</a> and <a href="#" class="color-blue">Privacy Policy</a> documents.
+            </label>
+        </div>
+    </div>
+    <div class="mb-3 t-sm-center">
+        <button class="Segoe-17 btn btn-primary btn-padding-lg rounded-0"><i class="fa fa-credit-card"></i> Pay Now</button>
+    </div>
+    <div>
+        <p class="text-center color-blue Segoe-18 p-2">This service is for a SIM lock removal ONLY, if your iPhone is locked to a previous owners iCloud account, you will require an iCloud Unlock prior to unlocking your device.</p>
+    </div>
+</div>
+<script>
+    function Popup() {
+        var element = document.getElementById("popupinfo");
+        element.classList.toggle("d-none");
+    }
+</script>

@@ -1,31 +1,522 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+<div class="banner container-2 pt-5 pb-5">
+    <div class="row">
+        <div class="col-md-3 d-md-block d-none">
+            <img src="~/assets/images/Iphone tilted 1.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-md-6">
+            <div class="banner-text">
+                <h1 class="text-blue">We Unlock</h1>
+                <h1 class="text-black" style="line-height: 38px;">Phones!</h1>
+                <div class="text-center pt-3 mt-5">
+                    <h5>The Best Phone Unlocking Sevices </h5>
+                    <h6>Instant Remote Unlocking. Use Your Phone With Any Network</h6>
+                    <p class="Segoe-18">
+                        Unlock your phone using our online service. We unlock all phones using the
+                        IMEI number so that your device is capable of using any Networks sim card.
+                        Our recommended method.
+                    </p>
+                    <p class="start-here">Start Here</p>
+                    <div class="pt-md-3">
+                        <a href="" class="btn btn-primary btn-rounded" data-toggle="modal" data-target="#exampleModalCenter">Unlock Phone</a>
+                        <a href="" class="btn btn-outline-secondary btn-rounded" data-toggle="modal" data-target="#exampleModalCenter">IMEI Check</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 d-md-block d-none">
+            <img src="~/assets/images/s21.png" class="img-fluid" alt="">
+        </div>
+    </div>
 </div>
+<div class="devices-icons">
+    <div class="container">
+        <h3>Select Your Device</h3>
+        <p>Choose your device from our various options.</p>
+        <div class="row justify-content-center">
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 320.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 321.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 324.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 325.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 323.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 319.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg col-6">
+                <img src="~/assets/images/Group 399.png" class="img-fluid" alt="">
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <div class="arrow-down">
+                <a href="/home/unlockphone"><img src="~/assets/images/Group 374.png" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white pt-5 pb-4">
+    <div class="container-2">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="~/assets/images/girlphone.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-6">
+                <div class="pb-3">
+                    <h1 class="text-black-title Rockwell-50 text-right t-sm-center">
+                        Unlock your phone in 3
+                        simple steps!
+                    </h1>
+                    <p class="color-blue Segoe-30 text-right t-sm-center">
+                        Provide your device details
+                    </p>
+                    <p class="text-right Segoe-20 t-sm-center">Choose the network and model of the phone you wish to unlock and supply the IMEI number. With our unique direct connection to the manufacturers databases your unlock will be processed for unlocking instantly without affecting the warranty.</p>
+                </div>
+                <div class="pb-3">
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+                    <p class="color-blue Segoe-30 text-right t-sm-center">
+                        We process your unlock
+                    </p>
+                    <p class="text-right Segoe-20 t-sm-center">
+                        Once payment is received, we process your device unlock remotely. You can track your order progress using the tracking page. Samsung and other manufacturer codes turn around typically 1 - 6 hours, iPhone unlocks take 24 hours.
+
+                    </p>
+                </div>
+                <div class="pb-3">
+
+                    <p class="color-blue Segoe-30 text-right t-sm-center">
+                        Phone is ready!
+                    </p>
+                    <p class="text-right Segoe-20 t-sm-center">
+                        Your device is unlocked , legally and permanently, Confirmation of this is sent to you via Email. iPhones are unlocked over-the-air, and Samsung devices are unlocked via code input. If at any time you need help our staff are available to help you with any questions 24/7.
+
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light-blue">
+    <div class="container pt-5 pb-5">
+        <h1 class="text-black-title pb-2 text-center Rockwell-50">
+            Phone Unlocking Service
+        </h1>
+        <p class="text-center Segoe-20">
+            At Mobile Unlocked our expert team is here to make the phone unlock process as easy for you as possible, and offer you total.
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="row justify-content-center text-center mobile-companies">
+            <div class="col-lg col-6">
+                <div class="bg-sky-blue icon-borders row ml-0 mr-0">
+                    <div class="col-md-12 align-self-center">
+                        <img src="~/assets/images/Mask Group 1.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-6">
+                <div class="bg-pink icon-borders row ml-0 mr-0">
+                    <div class="col-md-12 align-self-center">
+                        <img src="~/assets/images/Color-T-Mobile-Logo.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-6">
+                <div class="bg-yellow  icon-borders row ml-0 mr-0">
+                    <div class="col-md-12 align-self-center">
+                        <img src="~/assets/images/Sprint-Logo a.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-6">
+                <div class="bg-carrot icon-borders row ml-0 mr-0">
+                    <div class="col-md-12 align-self-center">
+                        <img src="~/assets/images/verizon-logo.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-6">
+                <div class="bg-green icon-borders row ml-0 mr-0">
+                    <div class="col-md-12 align-self-center">
+                        <img src="~/assets/images/Cricket_Wireless_Logoxcxc.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg col-6">
+                <div class="bg-purple icon-borders row ml-0 mr-0">
+                    <div class="col-md-12 align-self-center">
+                        <img src="~/assets/images/1280px-MetroPCS_logo.svgxsss.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <div class="arrow-down">
+                <a href="/home/carrier"><img src="~/assets/images/Group 374.png" class="img-fluid" alt=""></a>
+            </div>
+        </div>
     </div>
 </div>
+<div class="bg-white">
+    <div class="container-2 pt-4 pb-4">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 class="color-blue Rockwell-50 bold">Why unlock your phone with Mobile Unlocked?</h1>
+                <p class="Segoe-20">Thinking of getting your phone unlocked? You might be interested to know that unlocking your phone with Mobile Unlocked has a range of benefits:</p>
+                <ul>
+                    <li>
+                        <h4 class="Segoe-25 bold text-black-title">Safe & Legal Unlocking Service</h4>
+                        <p class="Segoe-20">Our sim unlock service is completely legal and secure, and will not affect your phone warranty or performance.</p>
+                    </li>
+                    <li>
+                        <h4 class="Segoe-25 bold text-black-title">Recommended, Permanent Unlocking Method</h4>
+                        <p class="Segoe-20">As our recommended unlocking solution is permanent it won’t be affected by any future software updates, your phone will remain unlocked to any carrier internationally.</p>
+                    </li>
+                    <li>
+                        <h4 class="Segoe-25 bold text-black-title">Affordable & Reliable</h4>
+                        <p class="Segoe-20">Having access to a range of different tariffs means you can save money by changing carrier or avoiding roaming charges when you travel abroad.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <img src="~/assets/images/couple.png" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light-blue">
+    <div class="container pt-5 pb-4 text-center">
+        <h1 class="Rockwell-50 bold">Apple Devices</h1>
+        <p class="Segoe-25 semi-bold text-center">
+            Choose your device from our various options.
+        </p>
+
+        <div class="row pt-3 mobiles justify-content-center">
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block">
+                    <img src="~/assets/images/iphone-12-pro-max-gold-hero.png" class="img-fluid" alt="">
+                </div>
+                <p class="Segoe-18  ">iPhone 12 pro max</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/iphone-12-blue-select-2020 (1).png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18 b  ">iPhone 11 pro max</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/iphonex.png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18  ">iPhone X</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/SwappieXsGold-1-1-1-600x600.png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18  ">iPhone X</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/SwappieXsGold-1-1-1-600x600.png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18  ">iPhone 8</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <div class="arrow-down">
+                <a href="#"><img src="~/assets/images/Group 374.png" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="bg-whitesmoke ">
+    <div class="container pt-5 pb-4 text-center">
+        <h1 class="Rockwell-50 bold">Samsung Devices</h1>
+        <p class="Segoe-25 semi-bold text-center">
+            Choose your device from our various options.
+        </p>
+
+        <div class="row pt-3 mobiles justify-content-center">
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/S21 ULTRA.png" class="img-fluid" alt=""> </div>
+                <p class="Segoe-18  ">Samsung S21 Ultra</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/S 21plus.png" class="img-fluid" alt=""> </div>
+                <p class="Segoe-18 b  ">Samsung S21+</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block">  <img src="~/assets/images/S 21.png" class="img-fluid" alt=""> </div>
+                <p class="Segoe-18  ">Samsung S21</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block">  <img src="~/assets/images/Saamsung S21.png" class="img-fluid" alt=""> </div>
+                <p class="Segoe-18  ">Samsung S20 Ultra</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/S20.png" class="img-fluid" alt=""> </div>
+                <p class="Segoe-18  ">Samsung S20</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+        </div>
+        <div class="text-center mt-3">
+            <div class="arrow-down">
+                <a href="#"><img src="~/assets/images/Group 374.png" class="img-fluid" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white pt-md-5 pb-md-5">
+    <div class="container-2">
+        <div class="bg-light-blue border-15 pt-5 pl-5 pr-5 pb-0">
+            <div class="owl-carousel owl-theme owl-loaded">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage">
+                        <div class="owl-item">
+
+                            <div class="row">
+                                <div class="col-md-8 align-self-end">
+                                    <img src="~/assets/images/sxddedfesd.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-4 align-self-center  t-sm-center">
+                                    <h2 class="Rockwell-30 color-blue text-right bold t-sm-center">Sprint Service Check</h2>
+                                    <p class="Segoe-20">Want to unlock your phone but aren’t sure which carrier it is locked? Whether your looking to unlock your phone carrier or just find out which carrier your phone is locked to, Mobile Unlocked can help you find out!</p>
+                                    <a href="#" class="btn btn-primary  float-md-right btn-rounded Segoe-20 bold">Check Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item">
+
+                            <div class="row">
+                                <div class="col-md-8 align-self-end">
+                                    <img src="~/assets/images/sxddedfesd.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="col-md-4 align-self-center t-sm-center">
+                                    <h2 class="Rockwell-30 color-blue text-right bold t-sm-center">Sprint Service Check</h2>
+                                    <p class="Segoe-20">Want to unlock your phone but aren’t sure which carrier it is locked? Whether your looking to unlock your phone carrier or just find out which carrier your phone is locked to, Mobile Unlocked can help you find out!</p>
+                                    <a href="#" class="btn btn-primary float-md-right btn-rounded Segoe-20 bold">Check Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light-blue p-md-5 pt-3 pb-3">
+    <h1 class="text-black Rockwell-35 text-center bold mb-3">Phone Unlock FAQs</h1>
+    <div class="container-2">
+        <div class="bg-white border-15 p-md-5 p-2">
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link d-inline-block" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                How do I unlock my phone?
+
+                            </button>
+                            <i class="fa fa-arrow-circle-right float-right mt-3 font-21"></i>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            It is much easier than you think to unlock your phone. By providing Mobile Unlocked with your phone’s IMEI (a unique set of 15 digits that identifies your specific phone) it will be permanently unlocked through our remote phone unlocking service. Your unlock is delivered “over the air” using WIFI/3G/4G.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed d-inline-block" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Is it legal to unlock a phone?
+                            </button>
+                            <i class="fa fa-arrow-circle-right float-right mt-3 font-21"></i>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            It is much easier than you think to unlock your phone. By providing Mobile Unlocked with your phone’s IMEI (a unique set of 15 digits that identifies your specific phone) it will be permanently unlocked through our remote phone unlocking service. Your unlock is delivered “over the air” using WIFI/3G/4G.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed d-inline-block" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                How long will it take to unlock my phone?
+                            </button>
+                            <i class="fa fa-arrow-circle-right float-right mt-3 font-21"></i>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            It is much easier than you think to unlock your phone. By providing Mobile Unlocked with your phone’s IMEI (a unique set of 15 digits that identifies your specific phone) it will be permanently unlocked through our remote phone unlocking service. Your unlock is delivered “over the air” using WIFI/3G/4G.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed d-inline-block" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                How to check my phone unlock status?
+                            </button>
+                            <i class="fa fa-arrow-circle-right float-right mt-3 font-21"></i>
+                        </h2>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                        <div class="card-body">
+                            It is much easier than you think to unlock your phone. By providing Mobile Unlocked with your phone’s IMEI (a unique set of 15 digits that identifies your specific phone) it will be permanently unlocked through our remote phone unlocking service. Your unlock is delivered “over the air” using WIFI/3G/4G.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-dark btn-rounded">View More</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-white pt-5 pb-5">
+    <div class="container-2">
+        <div class="row Testimonials">
+            <div class="col-md-4 text-center">
+                <h2 class="Rockwell-35 bold text-black">Testimonials</h2>
+                <h2 class="Segoe-73 bold text-center">5.0</h2>
+                <div>
+                    <i class="fa fa-star "></i> <i class="fa fa-star "></i> <i class="fa fa-star "></i> <i class="fa fa-star "></i> <i class="fa fa-star "></i> <span class="Segoe-30 bold"> 5.0</span>
+                </div>
+                <p class="Segoe-20 text-center">Out of 2000 reviews</p>
+                <a href="#" class="btn btn-outline-dark btn-rounded Segoe-14">Reviews</a>
+            </div>
+            <div class="col-md-8">
+                <div class="bg-light-blue p-5 border-15">
+                    <div class="text-center">
+                        <h2 class="Rockwell-30 bold">Really happy with the service</h2>
+                        <i class="fa fa-star "></i> <i class="fa fa-star "></i> <i class="fa fa-star "></i> <i class="fa fa-star "></i> <i class="fa fa-star "></i> <span class="Segoe-30 bold"> 5.0</span>
+
+                    </div>
+                    <p class="Segoe-18">
+                        "Lorem Ipsum ist ein einfacher Demo-Text fÃ¼r die Print- und Schriftindustrie. Lorem Ipsum ist in der Industrie bereits der Standard Demo-Text "Sed ut perspiciatis unde omnis iste natus"
+                    </p>
+                    <span class="text-right Segoe-13 bold text-black d-inline-block float-right"> Mayer Kaniva <div class="divider mr-2"></div> <span class="Segoe-11 d-inline-block">08/12/2020</span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-mobile" role="document">
+        <div class="modal-content index-mobile-modal">
+            <div class="modal-body">
+
+                <div class="relative">
+                    <img src="~/assets/images/mobile-layout.png" class="img-fluid" alt="">
+                    <div class="mobile-inner">
+                        <i class="fa fa-close color-blue float-right close-icon d-md-none d-inline-block" data-dismiss="modal"></i>
+                        <div class="logo text-center mb-3">
+                            <img src="~/assets/images/Veeunlock LOGO FINAL.png" class="img-fluid" alt="">
+                        </div>
+                        <h4 class="semi-bold Segoe-16">Select Your Model and Network</h4>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <div class="input-group input-group-lg">
+                                        <div class="input-group-prepend bg-white">
+                                            <span class="input-group-text"><i class="fa fa-mobile font-26"></i></span>
+                                        </div>
+                                        <select name="" id="" class="form-control">
+                                            <option value="">Select Model</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <select name="" id="" class="form-control form-control-lg rounded-0">
+                                    <option value="">United States</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <select name="" id="" class="form-control form-control-lg rounded-0">
+                                    <option value="">Select Network</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class=" ">
+                                    <div class="input-group input-group-lg">
+
+                                        <input type="text" placeholder="Don't know your carrier?" class=" Segoe-12 form-control rounded-0 form-control-lg">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary btn-sm Segoe-12 rounded-0">Click here</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="input">
+                                    <div class="input-group input-group-lg">
+                                        <div class="input-group-prepend bg-white">
+                                            <span class="input-group-text"><i class="fa fa-pencil "></i></span>
+                                        </div>
+                                        <input type="text" placeholder="Enter IMEI Number" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3 mt-3 text-center">
+                            <button class="Segoe-17 btn btn-primary font-normal rounded-0" data-dismiss="modal">  Check Out! </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+      $('.owl-carousel').owlCarousel({
+    loop:false,
+    nav:false,
+    dots:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:false,
+            loop:false
+        },
+        600:{
+            items:1,
+            nav:false,
+            loop:false
+        },
+        1000:{
+            items:1,
+            nav:false,
+            loop:false
+        }
+    }
+})
+</script>

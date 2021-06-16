@@ -1,0 +1,304 @@
+﻿
+@{
+    ViewBag.Title = "Unlocking Service";
+}
+<div class="breadcrumb d-flex bg-white mt-3 mb-3">
+    <div class="container-2">
+        <ul class="list-unstyled d-flex mb-0">
+            <li class="bread-item"><a href="/home">Home</a></li>
+            <li class="bread-item"><a href="#" class="active">@ViewBag.Title</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="page-title p-md-4 p-3">
+    <h1 class="Rockwell-45 color-blue bold">Phone Unlocking Service</h1>
+    <p class="Segoe-20">
+        At Mobile Unlocked our expert team is here to make the phone unlock process
+    </p>
+</div>
+<div class="mt-md-5 mb-md-5 mb-3 mt-3 relative ">
+    <div class="container-2 row">
+        <div class="col-md-6" style="background-image:url('/assets/images/background.svg');background-size:cover;background-position: center;">
+
+        </div>
+        <div class="col-md-6">
+            <h1 class="Rockwell-45 text-black-title text-right t-sm-center">iPhone Unlocking</h1>
+            <p class="text-right t-sm-center">
+                Unlock your iPhone online to use on any carrier from the comfort of your own home. Our service allows you to use any sim from any carrier provider. We factory unlock your iPhone using the IMEI so the device is remotely unlocked on the manufacturers database (the official method). This service does not affect the warranty and works on all models, including the iPhone 12, 11, XS, XR, X, 9, 8, 7, 6, 5 and 4. Unlock your iPhone online now by simply entering your IMEI number, iPhone model, and network the iPhone is currently locked to, we will email you to confirm completion of your unlock.
+            </p>
+        </div>
+    </div>
+    <div class="bg-light-blue">
+        <div class="container-2 mt-3 mb-3">
+            <div class="row">
+                <div class="col-md-6">
+
+                </div>
+                <div class="col-md-6">
+                    <h4 class="text-right Segoe-18 color-blue t-sm-center">Select your Model and Network</h4>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="input">
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-prepend bg-white">
+                                        <span class="input-group-text"><i class="fa fa-mobile font-26"></i></span>
+                                    </div>
+                                    <select name="" id="phonemodel" onchange="return Model(this)" class="form-control">
+                                        <option value="">Select Model</option>
+                                        <option value="iPhone 12 pro max">iPhone 12 pro max</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text bg-white rounded-0">
+                                        <img src="~/assets/images/Flags/Flags/flag-Stars-and-Stripes-May-1-1795.png" width="30" alt="">
+                                    </span>
+                                </div>
+                                <select name="" id="carriercountry" class="form-control form-control-lg rounded-0">
+                                    <option value="">Select Country</option>
+                                    <option value="United Stated">United Stated</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class=" ">
+                                <div class=" ">
+                                    <select name="" id="carrier" onchange="return Carrier(this)" class="form-control form-control-lg rounded-0">
+                                        <option value="">Select Network</option>
+                                        <option value="ATT USA">ATT USA</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class=" ">
+                                <div class="input-group input-group-lg">
+
+                                    <input type="text" placeholder="Don't know your carrier?" class="form-control rounded-0 form-control-lg">
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-primary btn-sm Segoe-12 rounded-0">Click here</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="input">
+                                <div class="input-group input-group-lg">
+                                    <div class="input-group-prepend bg-white">
+                                        <span class="input-group-text"><i class="fa fa-pencil "></i></span>
+                                    </div>
+                                    <input type="text" placeholder="Enter IMEI Number" class="form-control">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-2 t-sm-center">
+                        <button class="Segoe-17 btn btn-primary btn-padding-lg rounded-0 float-md-right  t-sm-center"><i class="fa fa-unlock"></i> Unlock</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="mobile-with-inputs">
+            <div class="text-center">
+                <img src="~/assets/images/mobile-layout.png" class="img-fluid mobilephone" alt="">
+            </div>
+            <div class="mobile-inner-labels">
+                <div class="logo text-center mb-1 mt-2">
+                    <img src="~/assets/images/Veeunlock LOGO FINAL.png" class="img-fluid" alt="">
+                </div>
+                <div class="text-center">
+                    <div class="mobile-border-img">
+                        <img src="~/assets/images/mobile-company-icons/Group 325.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="mt-2 pl-3 pr-3">
+                    <label for="" class="text-black Segoe-12 bold d-inline-block">
+                        Your Order
+                    </label>
+                    <i class="fa fa-shopping-cart color-blue float-right" style="font-size: 20px;"></i>
+                </div>
+                <div class="mt-2 d-none" id="phonemodeldiv">
+                    <div class="mobile-label">
+                        <div class="row">
+                            <div class="col-md-2 col-2 align-self-center pr-0">
+                                <img src="~/assets/images/mobile-company-icons/Group 325.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-8 align-self-center">
+                                <h6 class="text-black Segoe-14 mb-0">Model</h6>
+                                <p class="mb-0 color-blue Segoe-12" id="modeltext"></p>
+                            </div>
+                            <div class="col-md-2 col-2 align-self-center pl-0">
+                                <i class="fa fa-check-circle color-blue" style="font-size: 20px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 d-none" id="mobilecarreirdiv">
+                    <div class="mobile-label">
+                        <div class="row">
+                            <div class="col-md-2 col-2 align-self-center pr-0">
+                                <img src="~/assets/images/mobile-company-icons/Group 337.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-8 align-self-center">
+                                <h6 class="text-black Segoe-14 mb-0">Carrier</h6>
+                                <p class="mb-0 color-blue Segoe-12" id="carriertext"></p>
+                            </div>
+                            <div class="col-md-2 col-2 align-self-center pl-0">
+                                <i class="fa fa-check-circle color-blue" style="font-size: 20px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 d-none" id="productservicediv">
+                    <div class="mobile-label">
+                        <div class="row">
+                            <div class="col-md-2 col-2 align-self-center pr-0">
+                                <img src="~/assets/images/small-icons/Icon awesome-product-hunt.png" alt="">
+                            </div>
+                            <div class="col-md-8 col-8 align-self-center">
+                                <h6 class="text-black Segoe-14 mb-0">Product</h6>
+                                <p class="mb-0 color-blue Segoe-12">Standard Service</p>
+                            </div>
+                            <div class="col-md-2 col-2 align-self-center pl-0">
+                                <i class="fa fa-check-circle color-blue" style="font-size: 20px;"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+    <h2 class="text-center Rockwell-45 bold">3 Step Process</h2>
+</div>
+<div class="container-2 mt-3 mb-md-5 mb-3">
+    <div class="row">
+        <div class="col-md-4 d-grid">
+            <div class="process-box text-white">
+                <ul>
+                    <li>
+                        <h4 class="Segoe-23 bold">Provide your device details</h4>
+                        <p class="Segoe-20">
+                            Choose the network and model of the phone you wish to unlock and supply the IMEI number.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="process-box text-white">
+                <ul>
+                    <li>
+                        <h4 class="Segoe-23 bold">Provide your device details</h4>
+                        <p class="Segoe-20">
+                            Choose the network and model of the phone you wish to unlock and supply the IMEI number.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="process-box text-white">
+                <ul>
+                    <li>
+                        <h4 class="Segoe-23 bold">Provide your device details</h4>
+                        <p class="Segoe-20">
+                            Choose the network and model of the phone you wish to unlock and supply the IMEI number.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-2">
+    <h2 class="text-center Rockwell-45 bold">iPhone Unlocking</h2>
+    <div class="p-4">
+        <p class="text-center Segoe-20 text-grey">
+            At Mobileunlocked.com we understand that when it comes to unlocking your iPhone 12, you need to find an iPhone 12 carrier unlocking site that you can trust. We are proud to be able to offer all of our customers peace of mind with our fast and reliable iPhone 12 unlocking service. As well as not having to take your phone to a third party, there is also no need to send it off to be unlocked and your warranty will stay intact too.
+        </p>
+        <p class="text-center Segoe-20 text-grey">
+            If you need a quick and efficient iPhone 12 sim unlock service, Mobile Unlocked can help – and we promise that you will have no disruption to your phone service too. Our experienced and knowledgeable team can help to unlock a wide range of makes and models and satisfaction is always guaranteed!
+        </p>
+    </div>
+</div>
+<div class="bg-light-blue">
+    <div class="container pt-5 pb-4 text-center">
+        <h1 class="Rockwell-50 bold">Apple Devices</h1>
+        <p class="Segoe-25 semi-bold text-center">
+            Choose your device from our various options.
+        </p>
+
+        <div class="row pt-3 mobiles justify-content-center">
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block">
+                    <img src="~/assets/images/iphone-12-pro-max-gold-hero.png" class="img-fluid" alt="">
+                </div>
+                <p class="Segoe-18  ">iPhone 12 pro max</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/iphone-12-blue-select-2020 (1).png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18 b  ">iPhone 11 pro max</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/iphonex.png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18  ">iPhone X</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/SwappieXsGold-1-1-1-600x600.png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18  ">iPhone X</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+            <div class="col-lg text-center col-6 d-grid">
+                <div class="mobile-block"> <img src="~/assets/images/SwappieXsGold-1-1-1-600x600.png" class="img-fluid" alt=""></div>
+                <p class="Segoe-18  ">iPhone 8</p>
+                <a href="#" class="btn btn-primary btn-rounded bold Segoe-14">Unlock Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function Model(MoSelect) {
+        var Modeldiv = document.getElementById("phonemodeldiv");
+        var Mtext = document.getElementById("modeltext");
+        var motext = MoSelect.options[MoSelect.selectedIndex].text;
+        if (motext == 'Select Model') {
+            Modeldiv.classList.add('d-none');
+        } else {
+            Modeldiv.classList.remove('d-none');
+            Mtext.innerHTML = motext;
+        }
+    }
+    function Carrier(CaSelect) {
+        var Carrierdiv = document.getElementById("mobilecarreirdiv");
+        var Servicediv = document.getElementById("productservicediv");
+
+        var Ctext = document.getElementById("carriertext");
+        var Catext = CaSelect.options[CaSelect.selectedIndex].text;
+        if (Catext == 'Select Network') {
+            Carrierdiv.classList.add('d-none');
+            Servicediv.classList.add('d-none');
+        } else {
+            Carrierdiv.classList.remove('d-none');
+            Ctext.innerHTML = Catext;
+            Servicediv.classList.remove('d-none');
+        }
+    }
+
+</script>

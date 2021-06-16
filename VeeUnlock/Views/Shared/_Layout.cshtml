@@ -1,44 +1,122 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="~/assets/css/custom.css">
+    <script src="https://use.fontawesome.com/b2d2335d62.js"></script>
+    <link rel="stylesheet" href="~/assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/assets/css/owl.theme.default.css">
+    <title>@ViewBag.Title - VeeUnlock App</title>
+    <script src="~/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="~/assets/js/owl.carousel.min.js"></script>
+    <link rel="icon" href="~/assets/images/logo/Logo Black.png"  sizes="16x16">
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-2">
+            <a class="navbar-brand" href="/home/index"><img src="~/assets/images/logo/Logo Black.png" class="logos" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/home/unlockphone">Unlock Phone <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/carrier">Carrier Check</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/carrier">Carriers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/blog">Block</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/home/tracking">Tracking</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/home/contact">Contact</a>
+                    </li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                <form class="form-inline my-2 my-lg-0 languages-dropdown">
+                    <div class="nav-input">
+                        <p class="d-inline-block">English</p>
+                        <div class="divider"></div>
+                        <div class="d-inline-block nav-item dropdown">
+                            <a class="nav-link text-dark bold dropdown-toggle pr-1" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="~/assets/images/Flags/Flags/flag-Stars-and-Stripes-May-1-1795.png" style="width: 30px;" alt=""> US
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#"><img src="~/assets/images/Flags/Flags/1280px-Flag_of_France.svg.png" style="width: 30px;" alt=""> FR</a>
+                                <a class="dropdown-item" href="#"><img src="~/assets/images/Flags/Flags/1200px-Flag_of_Germany.svg.png" style="width: 30px;" alt=""> GE</a>
+                                <a class="dropdown-item" href="#"><img src="~/assets/images/Flags/Flags/FLAG-Ireland.jpg" style="width: 30px;" alt=""> IR</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+    <div class="footer pt-5 pb-5">
+        <div class="container-2">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mb-3"><img src="~/assets/images/logo/Logo white.png" class="logos" alt=""></div>
+                    <p class="Segoe-20">
+                        It is much easier than you think to unlock your phone. By providing Mobile Unlocked with your phone’s IMEI (a unique set of 15 digits that identifies your specific phone) it will be permanently unlocked through our remote phone unlocking service. Your unlock is delivered “over the air” using WIFI/3G/4G.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <h4 class="Segoe-23 bold text-right mb-3">Enquiries</h4>
+                            <p class="text-right"><a href="#">abc@gmail.com  </a></p>
+                            <p class="text-right"><a href="#">+445758589589  </a></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="Segoe-23 bold text-right mb-3">Services </h4>
+                            <p class="text-right"><a href="/home/unlockphone">Unlock Phone  </a></p>
+                            <p class="text-right"><a href="/home/phonecheck">Phone Check  </a></p>
+                            <p class="text-right"><a href="/home/carrier">Carriers  </a></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="Segoe-23 bold text-right mb-3">Browse</h4>
+                            <p class="text-right"><a href="#">Support </a></p>
+                            <p class="text-right"><a href="/home/blog">Block  </a></p>
+                            <p class="text-right"><a href="/home/tracking">Tracking  </a></p>
+                        </div>
+                        <div class="col-md-3">
+                            <h4 class="Segoe-23 bold text-right mb-3">Help</h4>
+                            <p class="text-right"><a href="#">Privacy Policy </a></p>
+                            <p class="text-right"><a href="#">Refund </a></p>
+                            <p class="text-right"><a href="#">Terms and  Conditions </a></p>
+                        </div>
+                    </div>
+                    <div class="border-bottom-white"></div>
+                    <div class="footer-social">
+                        <ul class="list-unstyled">
+                            <li> <a href="#"><img src="~/assets/images/Icon social-linkedin/Icon awesome-youtube.svg" class="icons " alt=""></a></li>
+                            <li> <a href="#"><img src="~/assets/images/Icon social-linkedin/Icon awesome-facebook.svg" class="icons " alt=""></a></li>
+                            <li> <a href="#"><img src="~/assets/images/Icon social-linkedin/Icon zocial-linkedin.svg" class="icons " alt=""></a></li>
+                            <li> <a href="#"><img src="~/assets/images/Icon social-linkedin/Icon awesome-instagram.svg" class="icons " alt=""></a></li>
+                            <li> <a href="#"><img src="~/assets/images/Icon social-linkedin/Icon awesome-twitter.svg" class="icons " alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="~/assets/js/bootstrap.js" type="text/javascript"></script>
+
 </body>
 </html>

@@ -26,5 +26,41 @@ namespace VeeUnlock.Controllers
 
             return View();
         }
+        public ActionResult Blog()
+        {
+            return View();
+        }
+        public ActionResult Carrier()
+        {
+            return View();
+        }
+        public ActionResult Payment()
+        {
+            return View();
+        }
+        public ActionResult Payment1()
+        {
+            return View();
+        }
+        public ActionResult PaymentSuccessfull()
+        {
+            return View();
+        }
+        public ActionResult PhoneCheck()
+        {
+            return View();
+        }
+        public ActionResult Tracking()
+        {
+            return View();
+        }
+        public ActionResult UnlockPhone()
+        {
+            return View();
+        }
+        public ActionResult UnlockingService()
+        {
+            return View();
+        }
     }
 }

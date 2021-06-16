@@ -1,0 +1,180 @@
+﻿
+@{
+    ViewBag.Title = "Payment 1";
+}
+<div class="breadcrumb d-flex bg-white mt-3 mb-3">
+    <div class="container-2">
+        <ul class="list-unstyled d-flex mb-0">
+            <li class="bread-item"><a href="/home">Home</a></li>
+            <li class="bread-item"><a href="#" class="active">@ViewBag.Title</a></li>
+        </ul>
+    </div>
+</div>
+<div class="page-title p-md-4 p-3">
+    <h1 class="Rockwell-45 text-black-title bold">Payment</h1>
+</div>
+<div class="container-2 mt-4">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="text-center p-md-3 p-2">
+
+                <div class="mt-3">
+                    <div class="payment-border-box">
+                        <div class="padding-20">
+                            <h4 class="Segoe-20 semi-bold">Order Summary</h4>
+                            <p class="d-inline-block Segoe-18 semi-bold mb-0">Product</p>
+                            <p class="d-inline-block float-right Segoe-18 semi-bold mb-0">Subtotal</p>
+                            <hr>
+                            <p class="Segoe-16 semi-bold">Phone</p>
+                            <p class="Segoe-12 semi-bold">IMEI Number:</p>
+                            <p class="Segoe-12  ">867679045364105</p>
+                            <p class="Segoe-12 semi-bold">Service Type:</p>
+                            <p class="Segoe-12  ">Standard Service</p>
+                            <p class="Segoe-12 semi-bold">Average Delivery Time:</p>
+                            <p class="Segoe-12 ">1-24 Hours</p>
+                            <hr>
+                            <h4 class="Segoe-14 semi-bold">Do you have a discount code?</h4>
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control Segoe-12" placeholder="Discount Code">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary btn-sm Segoe-14 font-normal">Apply</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-lightgrey">
+                            <div class="padding-20">
+                                <p class="d-inline-block Segoe-12 mb-0">Average Delivery Time</p>
+                                <p class="d-inline-block Segoe-12 mb-0 float-right">1-24 hours</p>
+                                <hr>
+                                <h4 class="Segoe-16 semi-bold d-inline-block">Total</h4>
+                                <input type="number" class="float-right Totalinput">
+                                <hr>
+                                <p class="d-inline-block mb-0">
+                                    <img src="~/assets/images/contact-icon/Icon metro-visa.png" class="img-fluid" alt="">
+                                    <img src="~/assets/images/contact-icon/Icon payment-mastercard-alt.png" class="img-fluid" alt="">
+                                </p>
+                                <p class="d-inline-block float-right Segoe-14 color-blue mb-0">
+                                    <img src="~/assets/images/contact-icon/Icon open-lock-locked.png" class="img-fluid" alt="">
+                                    Secure Payment
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <div class="payment-border-box bg-light-blue border-0 p-4">
+                            <div class="text-center relative">
+                                <h4 class="Segoe-16 color-blue font-normal">
+                                    Guaranteed Delivery Time
+                                    <a class="popup-click" onclick="return Popup()"> <span class="fa fa-question-circle"></span></a>
+                                </h4>
+                                <p class="Segoe-16 text-grey font-normal">2 Business Days</p>
+                                <div class="popup d-none" id="popupinfo">
+                                    <div class="card popup-card">
+                                        <div class="card-header bg-white">
+                                            <h6 class="color-blue Segoe-16 text-left"> What do these times mean?</h6>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-md-3 col-3 text-center align-self-top">
+                                                    <img src="~/assets/images/small-icons/Icon ionic-md-time.png" alt="">
+                                                </div>
+                                                <div class="col-md-9 col-9 text-left">
+                                                    <h4 class="text-grey bold Segoe-12">The average delivery time.</h4>
+                                                    <p class="text-grey Segoe-12">It is the average time to deliver unlocking service to you.</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-3 col-3 text-center">
+                                                    <img src="~/assets/images/small-icons/Icon awesome-calendar-alt.png" alt="">
+                                                </div>
+                                                <div class="col-md-9 col-9 text-left">
+                                                    <h4 class="text-grey bold Segoe-12">The guaranteed delivery time.</h4>
+                                                    <p class="text-grey Segoe-12">It is the average time to deliver unlocking service to you.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7">
+            <div class="mt-3">
+                <h4 class="Segoe-20 semi-bold t-sm-center">Please Enter Your Card Details</h4>
+            </div>
+            <div class="row mt-3">
+
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <select name="" id="" class="form-control">
+                                <option value="">Select your card</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="Segoe-14 mt-1 t-sm-center mb-0">Please enter your details below</p>
+            <div class="row mt-1">
+                <div class="col-md-6">
+
+                    <div class="input">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <input type="text" class="form-control credit-card" maxlength="19" placeholder="Enter Your Card Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="input">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                            </div>
+                            <input type="date" class="form-control ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="input">
+                        <div class="input-group input-group-lg">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fa fa-credit-card"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Card Holder">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class=" ">
+                        <div class="">
+                            <input type="text" maxlength="3" class="form-control rounded-0 form-control-lg" placeholder="CVV">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3 mt-2 t-sm-center">
+                <button class="Segoe-17 btn btn-primary btn-padding-lg rounded-0 float-md-right"><i class="fa fa-credit-card"></i> Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script>
+      function Popup() {
+    var element = document.getElementById("popupinfo");
+    element.classList.toggle("d-none");
+}
+</script>
