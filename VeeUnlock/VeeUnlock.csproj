@@ -407,6 +407,9 @@
     <Content Include="Views\Home\Tracking.cshtml" />
     <Content Include="Views\Home\UnlockPhone.cshtml" />
     <Content Include="Views\Home\UnlockingService.cshtml" />
+    <Content Include="Views\Home\RefundPolicy.cshtml" />
+    <Content Include="Views\Home\PrivacyPolicy.cshtml" />
+    <Content Include="Views\Home\TermsAndConditions.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

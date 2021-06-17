@@ -62,5 +62,17 @@ namespace VeeUnlock.Controllers
         {
             return View();
         }
+        public ActionResult RefundPolicy()
+        {
+            return View();
+        }
+        public ActionResult PrivacyPolicy()
+        {
+            return View();
+        }
+        public ActionResult TermsAndConditions()
+        {
+            return View();
+        }
     }
 }
