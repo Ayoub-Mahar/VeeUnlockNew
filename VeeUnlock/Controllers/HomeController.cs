@@ -74,5 +74,17 @@ namespace VeeUnlock.Controllers
         {
             return View();
         }
+        public ActionResult AdminDashboard()
+        {
+            return View();
+        }
+        public ActionResult AdminForms()
+        {
+            return View();
+        }
+        public ActionResult AdminTables()
+        {
+            return View();
+        }
     }
 }
